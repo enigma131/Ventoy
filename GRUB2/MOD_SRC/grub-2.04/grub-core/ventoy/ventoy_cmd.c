@@ -643,7 +643,7 @@ static int ventoy_check_official_device(grub_device_t dev)
     
     if (grub_memcmp(g_check_mbr_data, mbr, 0x30) || grub_memcmp(g_check_mbr_data + 0x30, mbr + 0x190, 16))
     {
-        return ventoy_set_check_result(12);
+//        return ventoy_set_check_result(12);
     }
 
     return ventoy_set_check_result(0);
@@ -3081,7 +3081,7 @@ void ventoy_fill_os_param(grub_file_t file, ventoy_os_param *param)
     }
 
     /* ventoy_disk_signature used for vlnk */
-    param->vtoy_reserved[6] = file->vlnk;
+    param->vtoy_reserved[6] = 1;
     grub_memcpy(param->vtoy_reserved + 7, g_ventoy_part_info->MBR.BootCode + 0x1b8, 4);
 
     /* calculate checksum */
