@@ -1532,7 +1532,7 @@ static int VentoyHook(ventoy_os_param *param)
 	}
 
 	Log("Find ISO file <%s>", IsoPath);
-    
+    /*
     //Find VtoyLetter in Vlnk Mode
     if (g_os_param_reserved[6] == 1)
     {
@@ -1603,7 +1603,7 @@ static int VentoyHook(ventoy_os_param *param)
         Log("Failed to check ventoy disk %u", VtoyDiskNum);
         return 1;
     }
-
+*/
     Drives = GetLogicalDrives();
     Log("Drives before mount: 0x%x", Drives);
 
