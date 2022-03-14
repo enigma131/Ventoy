@@ -398,7 +398,7 @@ grub_err_t ventoy_cmd_unix_check_vlnk(grub_extcmd_context_t ctxt, int argc, char
     file = grub_file_open(args[0], VENTOY_FILE_TYPE);
     if (file)
     {
-        g_unix_vlnk_boot = file->vlnk;
+        g_unix_vlnk_boot = 1;
         grub_file_close(file);
     }
 
