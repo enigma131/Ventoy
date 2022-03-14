@@ -410,7 +410,7 @@ static int vtoy_vlnk_printf(ventoy_os_param *param, char *diskname)
     uint8_t mbr[512];
     int fd = -1;
     char diskpath[128];
-    uint8_t check[8] = { 0x56, 0x54, 0x00, 0x47, 0x65, 0x00, 0x48, 0x44 };
+//    uint8_t check[8] = { 0x56, 0x54, 0x00, 0x47, 0x65, 0x00, 0x48, 0x44 };
     
     memcpy(disk_sig, param->vtoy_reserved + 7, 4);
 
@@ -427,15 +427,15 @@ static int vtoy_vlnk_printf(ventoy_os_param *param, char *diskname)
             read(fd, mbr, sizeof(mbr));
             close(fd);
 
-            if (memcmp(mbr + 0x190, check, 8) == 0)
-            {
+ //           if (memcmp(mbr + 0x190, check, 8) == 0)
+ //           {
                 printf("/dev/%s", diskname);
                 return 0;                
-            }
+/*            }
             else
             {
                 debug("check data failed /dev/%s\n", diskname);
-            }
+            } */
         }
     }
 
