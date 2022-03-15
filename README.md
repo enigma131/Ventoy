@@ -32,6 +32,7 @@ Repack all, then replace result in sda2 part:
 7) Modify [vtoyjump.c](https://github.com/enigma131/Ventoy/commit/d45f71cb098ace70166c8d4bea35690dee100287), recompile vtoyjump64.exe and replace it in sda2 part.
 
 8) Create chainloader entry in grub menu
+
 Edit Grub custom:
 
     sudo nano /etc/grub.d/40_custom
