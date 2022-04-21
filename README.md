@@ -1,6 +1,6 @@
 # Ventoy 
 
-This is a fork from [original Ventoy V1.0.71 module](https://github.com/ventoy/Ventoy). This modified version will try to install locally on hard disk 0 in partition 2 in replacement of MSR one. Menu will be done by adding a grub line for it. My try is done on GPT system.
+This is a fork from [original Ventoy V1.0.71 module](https://github.com/ventoy/Ventoy). This modified version will try to install locally on hard disk 0 in partition 2 in replacement of MSR one. Menu will be done by adding a grub line for it. My try is done on GPT system. Functionality was asked [here](https://github.com/ventoy/Ventoy/issues/1426) but not done.
 
 ## Installing/compiling:
 
